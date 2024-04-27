@@ -121,7 +121,7 @@ export async function fetchFilteredInvoices(
     return invoices.rows;
   } catch (error) {
     console.error('Database Error:', error);
-    throw new Error('Failed to fetch invoices.');
+    //throw new Error('Failed to fetch invoices.');
   }
 }
 
@@ -142,7 +142,7 @@ export async function fetchInvoicesPages(query: string) {
     return totalPages;
   } catch (error) {
     console.error('Database Error:', error);
-    throw new Error('Failed to fetch total number of invoices.');
+    //throw new Error('Failed to fetch total number of invoices.');
   }
 }
 
